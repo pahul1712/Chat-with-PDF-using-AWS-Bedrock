@@ -1,0 +1,46 @@
+# =====================================
+# Python & LangChain / FAISS Project
+# =====================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.venv/
+
+# FAISS index & vector stores
+faiss_index/
+*.faiss
+*.index
+
+# Data & output directories
+data/
+output/
+*.csv
+*.json
+*.txt
+
+# Logs and checkpoints
+*.log
+*.ckpt
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS system files
+.DS_Store
+
+# IDE / editor files
+.vscode/
+.idea/
+
+# AWS or Hugging Face credentials
+*.pem
+*.key
+*.aws
+*.token
+*.huggingface
