@@ -4,7 +4,7 @@
 
 ---
 
-## App Interface
+## App Interface Snapshot
 ![Demo](demo/main_page.png)
 
 ## 🚀 Overview
@@ -51,5 +51,70 @@ flowchart TD
     D --> E["Bedrock LLM (Claude / Llama3 / Titan)"]
     E --> F["Streamlit UI Response"]
     D --> G["Source Documents Display"]
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+- Clone the repository
+```
+git clone https://github.com/pahul1712/Chat-with-PDF-using-AWS-Bedrock.git
+cd Chat-with-PDF-using-AWS-Bedrock
+```
+
+- Create and activate a virtual environment
+```
+python3 -m venv venv
+source venv/bin/activate   # On Mac/Linux
+venv\Scripts\activate      # On Windows
+```
+
+- Install dependencies
+```
+pip install -r requirements.txt
+```
+
+- Run the app
+```
+streamlit run app.py
+```
+
+---
+
+
+## 🧾 Folder Structure
+```bash
+Chat-with-PDF-using-AWS-Bedrock/
+│
+├── app.py                 # Main Streamlit Application
+├── requirements.txt       # Required dependencies
+├── data/                  # (Optional) Preloaded PDFs
+├── faiss_index/           # Auto-generated FAISS vector store
+├── output/                # Generated files (if any)
+├── venv/                  # Virtual environment
+└── claude.py / llama3.py  # Practice scripts for Bedrock models
+```
+
+---
+
+## ✨ How It Works
+
+- Upload PDFs → Extract text and split into chunks.
+- Embed with Titan → Each chunk is converted into numerical vectors.
+- Store with FAISS → Enables fast similarity search for queries.
+- Ask Questions → Retrieve the most relevant context and generate an answer using a chosen model.
+- View Sources → Transparency for every answer with file name, page, and excerpt.
+
+---
+
+## 🧑‍💻 Author
+
+Pahuldeep Singh Dhingra  
+🎓 M.S. in Data Science & Analytics @ Florida Atlantic University  
+💼 Graduate Teaching Assistant (ANN, OOP, Foundations of Computing)
+
+
+
 
 
